@@ -24,23 +24,20 @@ public class Ejercicio8_Guia2 {
         for (int i = 0; i < elementos; ++i) {
             for (int j = 0; j < elementos; ++j) {
 
-                if (i == 0 || i == elementos - 1) {
+                if ((i == 0 || i == elementos - 1) && j < elementos -1) {
                     System.out.print("*");
-                                    if (j == elementos - 1) {
-                    System.out.println("");
+                }else if (j == elementos - 1) {
+                        System.out.println("*");
 
+                   } else if (j == 0) {
+                       System.out.print("*");
+                   }else if (j > 0 && j < elementos -1) {
+                       System.out.print(" ");
+                   }
                 }
-                    if (j == 0 || j == elementos - 1) {
-                        System.out.print("*");
-                    } else {
-                        System.out.print(" ");
-                    }
-                }
-
 
             }
 
         }
 
-    }
 }
