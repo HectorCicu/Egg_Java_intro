@@ -23,6 +23,7 @@ public class Ejercicio7_Guia2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         Scanner lee = new Scanner(System.in);
         int correctas = 0, incorrectas = 0;
         String rs232;
