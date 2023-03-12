@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author Temporal
  */
-public class Ejercicio_4_Guia2_Extras {
+public class Ejercicio_04_Guia2_Extras {
 
     /**
      * @param args the command line arguments
