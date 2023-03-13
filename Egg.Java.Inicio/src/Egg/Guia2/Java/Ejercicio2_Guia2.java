@@ -23,11 +23,11 @@ public class Ejercicio2_Guia2 {
         
         String palabra = lee.next();
         
-        if (palabra.equals("eureka"))
+        if (palabra.equals("eureka")) {
             System.out.println("La palabra eureka es correcta ");
-        else 
+        } else {
             System.out.println("La palabra ingresada no es correcta ");
-        
+    }
         
         
         
