@@ -1,4 +1,4 @@
-package Prueba;
+package Egg.Guia2.Java;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author Temporal
  */
-public class Ejercicio1_guia1 {
+public class Ejercicio1_Guia1 {
 
     /**
      * @param args the command line arguments
