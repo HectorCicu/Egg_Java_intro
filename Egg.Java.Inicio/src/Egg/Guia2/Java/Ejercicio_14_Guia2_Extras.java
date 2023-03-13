@@ -17,8 +17,27 @@ public class Ejercicio_14_Guia2_Extras {
      */
     public static void main(String[] args) {
         Scanner lee = new Scanner(System.in);
-        int a, m, edad, edadAcumula;
+        int a, m = 0, edad, edadAcumula = 0, cantHijos = 0;
         
+        
+        System.out.print("Ingrese cantidad de familias para evaluar: ");
+        a = lee.nextInt();
+        
+        for (int i = 1 ; i <= a ; ++i){
+            System.out.print("\nIngrese la cantidad de hijos de la familia " + i + ": ");
+            m = lee.nextInt();
+            
+            for (int j = 1 ; j <= m;++j) {
+                System.out.print("Ingrese la edad del hijo " + j +  " de la familia " + i + ": ");
+                edad = lee.nextInt();
+                edadAcumula += edad;
+                ++cantHijos; 
+                
+                
+            }
+        }
+        
+        System.out.println("\nLa edad promedio de todos los hijos de las familias es: " + (edadAcumula / cantHijos ) + " años.");
     }
 
 }
