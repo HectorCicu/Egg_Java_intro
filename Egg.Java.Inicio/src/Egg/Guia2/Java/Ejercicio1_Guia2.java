@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author Temporal
  */
-public class Ejercicio1_Guia1 {
+public class Ejercicio1_Guia2 {
 
     /**
      * @param args the command line arguments

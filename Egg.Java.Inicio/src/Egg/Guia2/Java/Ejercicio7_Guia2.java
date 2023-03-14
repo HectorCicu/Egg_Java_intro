@@ -23,7 +23,7 @@ public class Ejercicio7_Guia2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         Scanner lee = new Scanner(System.in);
         int correctas = 0, incorrectas = 0;
         String rs232;
@@ -35,7 +35,10 @@ public class Ejercicio7_Guia2 {
             if (rs232.equals("&&&&&")) {
                 break;
 
-            } else if (rs232.length() != 5 || !rs232.substring(0, 1).equals("X") || !rs232.substring(4, 5).equals("O")) {
+                /*            } else if (rs232.length() != 5 || !rs232.substring(0, 1).equals("X") || 
+                 *  !rs232.substring(4, 5).equals("O")) {     ----- reemplazado por línea debajo 
+                 */
+            } else if (rs232.length() != 5 || !rs232.startsWith("X") || !rs232.endsWith("O")) {  // visto en encuentro 5
                 ++incorrectas;
             } else {
                 ++correctas;
@@ -44,7 +47,7 @@ public class Ejercicio7_Guia2 {
         } while (!rs232.equals("&&&&&"));
 
         System.out.println("\nLa cantidad de comandos correctos fueron > " + correctas);
-        System.out.println("\nLa cantidad de comandos incorrectos fueron > " + incorrectas  + "\n");
+        System.out.println("\nLa cantidad de comandos incorrectos fueron > " + incorrectas + "\n");
 
     }
 }
