@@ -23,7 +23,8 @@ double  minutos, dias, horas;
     
             dias = (int) (minutos / 1440);
             horas = (int) ((minutos   - (dias * 1440))/60);
-            int  minutosRestantes = (int) (minutos - (dias * 1440 + horas * 60));
+            //int  minutosRestantes = (int) (minutos - (dias * 1440 + horas * 60)); - Modificado encuentro 6 
+            int minutosRestantes = (int) minutos%60;
 
         System.out.println("\nEl resultado de convertir es: " + dias + " días, " + horas + " horas, " + minutosRestantes + " minutos \n") ;            
               
